@@ -8,6 +8,20 @@ const takeANumber = (arr,name) =>{
   return `Welcome, ${name}. You are number ${nameIndex} in line.`
 }
 
+let count = 1
+const takeANumber2 = (arr) =>{
+  // keep track of a customer count
+  //everytime its called count should increment by 1
+  // spit out a string. "Welcome your num is blank"
+  count+=1
+  
+  console.log( `Welcome your ${count} is blank.`)
+}
+takeANumber2()
+takeANumber2()
+
+
+
 const nowServing = arr =>{
   if(arr.length === 0){
     return "There is nobody waiting to be served!"
